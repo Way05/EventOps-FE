@@ -4,7 +4,7 @@ import Link from "next/link";
 //LANDING PAGE AKA HOMESCREEN
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[#EFEFEF] font-sans text-black">
+    <div className="flex min-h-screen items-center justify-center bg-[#EFEFEF] text-black">
       <Link href="/gettingstarted">
         <Button>HELLO I AM REALEST BOY FOR TESTING</Button>
       </Link>

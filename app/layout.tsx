@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cabin, Libre_Franklin } from "next/font/google";
 import "@radix-ui/themes/styles.css";
 import "./globals.css";
 import { Theme } from "@radix-ui/themes";
+import NavBar from "@/components/NavBar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const cabin = Cabin({
+  variable: "--font-cabin",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const libreFranklin = Libre_Franklin({
+  variable: "--font-libre-franklin",
   subsets: ["latin"],
 });
 
@@ -26,9 +27,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${cabin.variable} ${libreFranklin.variable} antialiased`}>
         <Theme>
-          {children}
+          <div className="flex h-screen">
+            <NavBar />
+            <main className="flex-1 overflow-auto">
+              {children}
+            </main>
+          </div>
         </Theme>
       </body>
     </html>
