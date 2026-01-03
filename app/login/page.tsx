@@ -89,6 +89,11 @@ export default function LogIn() {
                 </button>
               </div>
             </Form.Submit>
+            <Form.Field name="Forgot" asChild>
+              <Form.Label className="text-sm">
+                <a href="/signup">New User?</a> <a>Forgot Password?</a>
+              </Form.Label>
+            </Form.Field>
           </Form.Root>
         </Card>
       </div>
