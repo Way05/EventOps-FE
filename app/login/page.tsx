@@ -5,7 +5,7 @@ import { EyeClosedIcon, EyeOpenIcon } from "@radix-ui/react-icons";
 
 export default function LogIn() {
   return (
-    <div className="grid h-screen w-screen grid-cols-3 grid-rows-5">
+    <div className="grid h-full w-full grid-cols-3 grid-rows-5">
       <div className="group col-start-2 m-auto mt-5 flex items-center text-center">
         <svg
           width="45"
